@@ -7,6 +7,16 @@ const fs = require('fs');
 const config = require('./handlers/config');
 const { initDb } = require('./database/init');
 
+// Render requer que a aplicação escute uma porta HTTP.
+const express = require('express');
+const http = require('http');
+
+const app = express();
+app.get('/health', (_req, res) => res.json({ ok: true }));
+
+const server = http.createServer(app);
+
+
 const client = new Client({
   intents: [
     GatewayIntentBits.Guilds,
@@ -52,8 +62,12 @@ const commandFiles = fs.existsSync(commandsPath)
     }
   }
 
+  const PORT = process.env.PORT ? Number(process.env.PORT) : 3000;
+  server.listen(PORT, () => console.log(`[WEB] ready on :${PORT}`));
+
   const token = config.token || process.env.TOKEN;
   if (!token) throw new Error('Token não configurado em config.json');
   client.login(token);
 })();
+
 
