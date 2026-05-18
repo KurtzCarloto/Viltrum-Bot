@@ -12,9 +12,9 @@
     "better-sqlite3": "^11.6.0",
     "discord.js": "^14.16.3",
     "dotenv": "^16.4.5",
+    "express": "4.19.2",
     "node-html-parser": "^6.1.12",
     "sanitize-html": "^2.12.1",
     "sqlite3": "^5.1.7"
   }
 }
-
