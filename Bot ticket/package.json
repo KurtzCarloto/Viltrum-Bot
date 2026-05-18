@@ -1,0 +1,25 @@
+{
+  "name": "discord-ticket-bot-premium",
+  "version": "1.0.0",
+  "description": "Bot premium de tickets para Discord (Discord.js v14) com SQLite e transcripts/logs.",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node src/index.js",
+    "lint": "node -e \"console.log('no lint configured')\""
+  },
+  "dependencies": {
+    "@discordjs/builders": "^1.7.0",
+    "@discordjs/rest": "^2.4.0",
+    "cors": "^2.8.6",
+    "discord-api-types": "^0.37.91",
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5",
+    "express": "^5.2.1",
+    "node-html-parser": "^6.1.11",
+    "sanitize-filename": "^1.6.3",
+    "socket.io": "^4.8.3",
+    "sqlite3": "^6.0.1"
+  }
+}

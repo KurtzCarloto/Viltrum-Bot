@@ -1,0 +1,31 @@
+{
+  "token": "PUT_DISCORD_TOKEN_HERE",
+  "guildId": "PUT_GUILD_ID_HERE",
+
+
+  "staffRoleId": "PUT_STAFF_ROLE_ID_HERE",
+  "ticketCategoryId": "PUT_TICKET_CATEGORY_ID_HERE",
+
+  "logsChannelId": "PUT_LOGS_CHANNEL_ID_HERE",
+
+  "panel": {
+    "title": "🎫 Sistema de Tickets",
+    "description": "Escolha uma categoria abaixo para abrir um ticket. Nosso suporte responde o mais rápido possível.",
+    "bannerUrl": "",
+    "footer": "Ticket Bot Premium • Sistema Avançado",
+    "color": "0x5865f2"
+  },
+
+  "messages": {
+    "openTicketTitle": "Ticket aberto com sucesso!",
+    "openTicketDescription": "Olá! Sua solicitação foi registrada. Para uma resposta mais rápida, descreva seu problema com detalhes.",
+
+    "closeTicketTitle": "Fechando ticket...",
+    "closeTicketDescription": "Gerando transcript e registrando logs."
+  },
+
+  "antiSpam": {
+    "cooldownSeconds": 10
+  }
+}
+
